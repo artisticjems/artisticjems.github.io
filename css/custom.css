@@ -27,11 +27,7 @@ a.skip-main:focus, a.skip-main:active {
 
 nav a{
     text-align: center;    
-    color:#FFFFFF;
-    background: #0000FF;
     display: inline-block;
-    width: 20%;
-    margin-right: 2%;
 
 }
 .current{
