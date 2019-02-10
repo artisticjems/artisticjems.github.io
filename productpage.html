@@ -17,13 +17,13 @@
     </head>
     <body>
         <!--Contains the navbar page heading and -->
-        <header>
+        <header role="banner">
             <!-- Skip to content link -->
             <a class = "skip-main" href="#content" >Skip To Content</a>
             
             <!--NavBar:  Home  ArtPieces  OurArtist About Us FAQs
              navbar -->
-            <nav>
+            <nav role="navigation">
                 <!-- NavBar:  Home  ArtPieces  OurArtist About Us FAQs -->
                 <a href="index.html">Home</a>
                 <a href="productpage.html">Art Pieces</a>
@@ -34,159 +34,174 @@
             </nav>
             <h1>Art Pieces</h1>
         </header>
-        <section id="content" tabindex="-1">
-            <header>
-                <!--header1: Top Pick
-                (insert image of current top pick product) -->
-                <h1>Top Pick</h1>
-            </header>
-            <figure>
-                <img src="/images/furniture_ex1.jpg" alt="Expertly crafted wooden chair">
-                <figcaption>Fig.1 - Expertly crafted wooden chair</figcaption>
-            </figure>
-            <p>
-                Check out our artists' current top pick! This Expertly crafted mohogany chair. Get yours now before their outta stock!
-            </p>
-        </section>
-        
-        
-        <section>
-            <!-- header2-1: Furniture -->
-            <header>
-                <h1>Furniture</h1>
-            </header>
-            <!-- List of Furniture Items -->
-            <li>
-                <!--header3-1: Name Of Item
-                (insert furniture_ex1.jpeg)
-                paragraph1-1: price
-                paragraph1-2: descript -->
-                <h2>Wooden Chair</h2>
+        <main role="main"></main>
+            <section id="content" tabindex="-1">
+                <header>
+                    <!--header1: Top Pick
+                    (insert image of current top pick product) -->
+                    <h1>Top Pick</h1>
+                </header>
                 <figure>
                     <img src="/images/furniture_ex1.jpg" alt="Expertly crafted wooden chair">
-                    <figcaption>Fig.2 - Expertly crafted wooden chair</figcaption>
+                    <figcaption>Fig.1 - Expertly crafted wooden chair</figcaption>
                 </figure>
-                <p><span>&#36;</span>12.99</p>
                 <p>
-                    Check out this Expertly crafted mohogany chair. Get yours now before their outta stock!
+                    Check out our artists' current top pick! This Expertly crafted mohogany chair. Get yours now before their outta stock!
                 </p>
-                
-                <!-- header3-2: Name Of Item
-                (insert furniture_ex2.jpeg)
-                paragraph2-1: price
-                paragraph2-2: descript -->
-                <h2>Side Table</h2>
-                <figure>
-                        <img src="/images/furniture_ex2.jpg" alt="Finely Crafted Side Table">
-                        <figcaption>Fig.3 - Finely Crafted Side Table</figcaption>
-                </figure>
-                <p><span>&#36;</span>17.29</p>
-                <p>Check out this Expertly crafted side table. Get yours now before their outta stock!</p>
+            </section>
+            
+            
+            <section>
+                <!-- header2-1: Furniture -->
+                <header>
+                    <h1>Furniture</h1>
+                </header>
+                <ul>
+                    <!-- List of Furniture Items -->
+                    <li>
+                        <!--header3-1: Name Of Item
+                        (insert furniture_ex1.jpeg)
+                        paragraph1-1: price
+                        paragraph1-2: descript -->
+                        <h2>Wooden Chair</h2>
+                        <figure>
+                            <img src="/images/furniture_ex1.jpg" alt="Expertly crafted wooden chair">
+                            <figcaption>Fig.2 - Expertly crafted wooden chair</figcaption>
+                        </figure>
+                        <p><span>&#36;</span>12.99</p>
+                        <p>
+                            Check out this Expertly crafted mohogany chair. Get yours now before their outta stock!
+                        </p>
+                        
+                        <!-- header3-2: Name Of Item
+                        (insert furniture_ex2.jpeg)
+                        paragraph2-1: price
+                        paragraph2-2: descript -->
+                        <h2>Side Table</h2>
+                        <figure>
+                                <img src="/images/furniture_ex2.jpg" alt="Finely Crafted Side Table">
+                                <figcaption>Fig.3 - Finely Crafted Side Table</figcaption>
+                        </figure>
+                        <p><span>&#36;</span>17.29</p>
+                        <p>Check out this Expertly crafted side table. Get yours now before their outta stock!</p>
 
-                <!-- header3-3: Name Of Item
-                (insert furniture_ex3.jpeg)
-                paragraph3-1: price
-                paragraph3-2: descript -->
-                <h2>Office Desk</h2>
-                <figure>
-                        <img src="/images/furniture_ex3.jpg" alt="Spacious Office Desk">
-                        <figcaption>Fig.4 - Spacious Office Desk</figcaption>
-                </figure>
-                <p><span>&#36;</span>32.95</p>
-                <p>Check out this Spacious Office Desk. Get yours now before their outta stock!</p>
-            </li>
-        </section>
+                        <!-- header3-3: Name Of Item
+                        (insert furniture_ex3.jpeg)
+                        paragraph3-1: price
+                        paragraph3-2: descript -->
+                        <h2>Office Desk</h2>
+                        <figure>
+                                <img src="/images/furniture_ex3.jpg" alt="Spacious Office Desk">
+                                <figcaption>Fig.4 - Spacious Office Desk</figcaption>
+                        </figure>
+                        <p><span>&#36;</span>32.95</p>
+                        <p>Check out this Spacious Office Desk. Get yours now before their outta stock!</p>
+                    </li>
+                </ul>
+            </section>
 
-        <section>
+            <section>
                 <!-- header2-2: Illustrations -->
                 <header>
                     <h1>Illustrations</h1>
                 </header>
-                <!-- List of Illustrations Items -->
-                <li>
-                    <!--header3-1: Name Of Item
-                    (insert illustrations_ex1.jpeg)
-                    paragraph1-1: price
-                    paragraph1-2: descript -->
-                    <h2>Personal Sunset</h2>
-                    <figure>
-                        <img src="/images/illustration_ex1.jpg" alt="Warm and cool colors together crating a serene scene">
-                        <figcaption>Fig.5 - Warm and cool colors together crating a serene scene</figcaption>
-                    </figure>
-                    <p><span>&#36;</span>40.00</p>
-                    <p>
-                        Cool colors together crating a serene scene. Get yours now before its gone!
-                    </p>
-                    
-                    <!-- header3-2: Name Of Item
-                    (insert illustrations_ex2.jpeg)
-                    paragraph2-1: price
-                    paragraph2-2: descript -->
-                    <h2>The Feast</h2>
-                    <figure>
-                            <img src="/images/illustration_ex2.jpg" alt="A recreation of the last supper">
-                            <figcaption>Fig.6 - A recreation of the last supper</figcaption>
-                    </figure>
-                    <p><span>&#36;</span>105.00</p>
-                    <p>Check out this Expertly done recreation of the last supper. Get yours now before their outta stock!</p>
-    
-                    <!-- header3-3: Name Of Item
-                    (insert illustrations_ex3.jpeg)
-                    paragraph3-1: price
-                    paragraph3-2: descript -->
-                    <h2>The Bunny</h2>
-                    <figure>
-                            <img src="/images/illustration_ex3.jpg" alt="A creative perspective on a bunny">
-                            <figcaption>Fig.7 - A creative perspective on a bunny</figcaption>
-                    </figure>
-                    <p><span>&#36;</span>75.00</p>
-                    <p>Check out this creative perspective on a bunny. Get yours now before their outta stock!</p>
-                </li>
-        </section>
+                <ul>
+                    <!-- List of Illustrations Items -->
+                    <li>
+                        <!--header3-1: Name Of Item
+                        (insert illustrations_ex1.jpeg)
+                        paragraph1-1: price
+                        paragraph1-2: descript -->
+                        <h2>Personal Sunset</h2>
+                        <figure>
+                            <img src="/images/illustration_ex1.jpg" alt="Warm and cool colors together crating a serene scene">
+                            <figcaption>Fig.5 - Warm and cool colors together crating a serene scene</figcaption>
+                        </figure>
+                        <p><span>&#36;</span>40.00</p>
+                        <p>
+                            Cool colors together crating a serene scene. Get yours now before its gone!
+                        </p>
+                        
+                        <!-- header3-2: Name Of Item
+                        (insert illustrations_ex2.jpeg)
+                        paragraph2-1: price
+                        paragraph2-2: descript -->
+                        <h2>The Feast</h2>
+                        <figure>
+                                <img src="/images/illustration_ex2.jpg" alt="A recreation of the last supper">
+                                <figcaption>Fig.6 - A recreation of the last supper</figcaption>
+                        </figure>
+                        <p><span>&#36;</span>105.00</p>
+                        <p>Check out this Expertly done recreation of the last supper. Get yours now before their outta stock!</p>
+        
+                        <!-- header3-3: Name Of Item
+                        (insert illustrations_ex3.jpeg)
+                        paragraph3-1: price
+                        paragraph3-2: descript -->
+                        <h2>The Bunny</h2>
+                        <figure>
+                                <img src="/images/illustration_ex3.jpg" alt="A creative perspective on a bunny">
+                                <figcaption>Fig.7 - A creative perspective on a bunny</figcaption>
+                        </figure>
+                        <p><span>&#36;</span>75.00</p>
+                        <p>Check out this creative perspective on a bunny. Get yours now before their outta stock!</p>
+                    </li>
+                </ul>
+            </section>
 
-        <section>
+            <section>
                 <!-- header2-3: Sculptures -->
                 <header>
                     <h1>Sculptures</h1>
                 </header>
-                <!-- List of Sculpture Items -->
-                <li>
-                    <!--header3-1: Name Of Item
-                    (insert sculpture_ex1.jpeg)
-                    paragraph1-1: price
-                    paragraph1-2: descript -->
-                    <h2>The Chibi</h2>
-                    <figure>
-                        <img src="/images/sculpture_ex1.jpg" alt="A mini figurine of anime girl from that one anime we all know and love">
-                        <figcaption>Fig.8 - A mini figurine of anime girl from that one anime we all know and love</figcaption>
-                    </figure>
-                    <p><span>&#36;</span>8.99</p>
-                    <p>
-                        A mini figurine of anime girl from that one anime we all know and love
-                    </p>
-                    
-                    <!-- header3-2: Name Of Item
-                    (insert sculpture_ex2.jpeg)
-                    paragraph2-1: price
-                    paragraph2-2: descript -->
-                    <h2>Biblical Sculpture Set</h2>
-                    <figure>
-                            <img src="/images/sculpture_ex2.jpg" alt="Biblical Sculpture Set">
-                            <figcaption>Fig.9 - Biblial Sculpture Set</figcaption>
-                    </figure>
-                    <p><span>&#36;</span>105.00</p>
-                    <p>Check out this Biblical Sculpture Set. Get yours now before their outta stock!</p>
-    
-                    <!-- header3-3: Name Of Item
-                    (insert illustrations_ex3.jpeg)
-                    paragraph3-1: price
-                    paragraph3-2: descript -->
-                    <h2>The Guardsman</h2>
-                    <figure>
-                            <img src="/images/sculpture_ex3.jpg" alt="A life size statue of a roman guardsman">
-                            <figcaption>Fig.10 - A life size statue of a roman guardsman</figcaption>
-                    </figure>
-                    <p><span>&#36;</span>1175.00</p>
-                    <p>Check out this life size statue of a roman guardsman. Get yours now before their outta stock!</p>
-                </li>
-        </section>
+                <ul>
+                    <!-- List of Sculpture Items -->
+                    <li>
+                        <!--header3-1: Name Of Item
+                        (insert sculpture_ex1.jpeg)
+                        paragraph1-1: price
+                        paragraph1-2: descript -->
+                        <h2>The Chibi</h2>
+                        <figure>
+                            <img src="/images/sculpture_ex1.jpg" alt="A mini figurine of anime girl from that one anime we all know and love">
+                            <figcaption>Fig.8 - A mini figurine of anime girl from that one anime we all know and love</figcaption>
+                        </figure>
+                        <p><span>&#36;</span>8.99</p>
+                        <p>
+                            A mini figurine of anime girl from that one anime we all know and love
+                        </p>
+                        
+                        <!-- header3-2: Name Of Item
+                        (insert sculpture_ex2.jpeg)
+                        paragraph2-1: price
+                        paragraph2-2: descript -->
+                        <h2>Biblical Sculpture Set</h2>
+                        <figure>
+                                <img src="/images/sculpture_ex2.jpg" alt="Biblical Sculpture Set">
+                                <figcaption>Fig.9 - Biblial Sculpture Set</figcaption>
+                        </figure>
+                        <p><span>&#36;</span>105.00</p>
+                        <p>Check out this Biblical Sculpture Set. Get yours now before their outta stock!</p>
+        
+                        <!-- header3-3: Name Of Item
+                        (insert illustrations_ex3.jpeg)
+                        paragraph3-1: price
+                        paragraph3-2: descript -->
+                        <h2>The Guardsman</h2>
+                        <figure>
+                                <img src="/images/sculpture_ex3.jpg" alt="A life size statue of a roman guardsman">
+                                <figcaption>Fig.10 - A life size statue of a roman guardsman</figcaption>
+                        </figure>
+                        <p><span>&#36;</span>1175.00</p>
+                        <p>Check out this life size statue of a roman guardsman. Get yours now before their outta stock!</p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer role="contentinfo">
+            <h1>
+                You can't think outside the box if you're still thinking about the box now can you?
+            </h1>
+        </footer>
+    </body>
+</html>
