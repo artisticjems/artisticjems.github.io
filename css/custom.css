@@ -28,10 +28,12 @@ a.skip-main:focus, a.skip-main:active {
 nav a{
     text-align: center;    
     display: inline-block;
-
+    width: 20%;
+    margin-right: 2%;
 }
-.current{
+
+/* .current{
     color: #000000;
     background: #0FFF00;
     text-transform: uppercase;
-}
+} */
