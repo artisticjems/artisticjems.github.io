@@ -28,12 +28,11 @@ a.skip-main:focus, a.skip-main:active {
 nav a{
     text-align: center;    
     display: inline-block;
-    width: 10%;
-    margin-right: 2%;
-}
+    font-family: 'Staatliches', cursive;
+    font-size: 1.5em
 
-/* .current{
-    color: #000000;
-    background: #0FFF00;
-    text-transform: uppercase;
-} */
+}
+.current{
+    color: white;
+    background: #000000;
+}
