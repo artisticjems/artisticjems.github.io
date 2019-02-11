@@ -50,6 +50,15 @@ nav a{
     max-width: 75%;
     height: 20%
 }
+.art-pieces{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: space-between;
+
+}
 .spotlight-art-piece{
     max-width: 50%;
     height: auto;
