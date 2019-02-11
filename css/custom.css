@@ -24,8 +24,7 @@ a.skip-main:focus, a.skip-main:active {
     z-index:999;
 }
 
-nav{
-    display: inline-block;
+.nav{
     background: lightgray;
 }
 nav a{
@@ -42,6 +41,14 @@ nav a{
 .page-header{
     font-size: 2.5em;
     text-align: center;
-    margin: .2em;
-    font-family: 'FiraSans-SemiBold';
+    padding:20px;
+    font-family: 'Staatliches', cursive;
+}
+.spotlight-art-piece{
+    max-width: 50%;
+    height: auto;
+}
+.art-piece-img{
+    max-width: 25%;
+    height: auto;
 }
