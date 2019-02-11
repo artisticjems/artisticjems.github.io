@@ -25,9 +25,11 @@ a.skip-main:focus, a.skip-main:active {
 }
 
 .nav{
+    display: inline-block;
     background: lightgray;
 }
 nav a{
+    padding: 20px;
     color: black;
     font-family: 'Staatliches', cursive;
     font-size: 4.5em;
@@ -43,6 +45,10 @@ nav a{
     text-align: center;
     padding:20px;
     font-family: 'Staatliches', cursive;
+}
+.banner{
+    max-width: 100%;
+    height: 20%
 }
 .spotlight-art-piece{
     max-width: 50%;
