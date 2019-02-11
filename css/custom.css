@@ -26,10 +26,10 @@ a.skip-main:focus, a.skip-main:active {
 
 nav{
     display: inline-block;
+    background: lightgray;
 }
 nav a{
     color: black;
-    background: lightgray;
     font-family: 'Staatliches', cursive;
     font-size: 4.5em;
     text-decoration: none;
