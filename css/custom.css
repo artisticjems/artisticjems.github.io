@@ -27,7 +27,6 @@ a.skip-main:focus, a.skip-main:active {
 
 nav a{
     text-align: left;    
-    display: inline-block;
     background: #f1f1f1;
     font-family: 'Staatliches', cursive;
     font-size: 1.5em;
