@@ -26,7 +26,7 @@ a.skip-main:focus, a.skip-main:active {
 
 
 nav a{
-    text-align: center;    
+    text-align: left;    
     display: flex;
     background: #f1f1f1;
     font-family: 'Staatliches', cursive;
