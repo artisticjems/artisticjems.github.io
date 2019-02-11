@@ -27,16 +27,13 @@ a.skip-main:focus, a.skip-main:active {
 
 nav a{
     text-align: center;    
-    display: inline-block;
+    display: block;
+    padding: 14px 16px;
+    margin: 0;
     background: #f1f1f1;
     font-family: 'Staatliches', cursive;
     font-size: 1.5em;
-    margin: 0.5%;
-    padding: 0.5%
-
-
-
-
+    text-decoration: none
 }
 .current{
     color: white;
