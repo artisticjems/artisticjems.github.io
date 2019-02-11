@@ -42,5 +42,6 @@ nav a{
 .page-header{
     font-size: 2.5em;
     text-align: center;
-    margin: .2em
+    margin: .2em;
+    font-family: 'FiraSans-SemiBold';
 }
