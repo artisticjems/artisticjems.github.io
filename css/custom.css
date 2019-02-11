@@ -25,9 +25,9 @@ a.skip-main:focus, a.skip-main:active {
 }
 
 
-nav a{
+/* nav a{
     text-align: center;    
-    display: block;
+    display: 
     padding: 0px 0px;
     margin: 0;
     background: #f1f1f1;
@@ -38,4 +38,4 @@ nav a{
 .current{
     color: white;
     background: #000000;
-}
+} */
