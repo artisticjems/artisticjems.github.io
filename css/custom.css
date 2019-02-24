@@ -48,9 +48,10 @@ a.active{
         text-align: center;
         font-size: 2em;
     }
+    
 }
 
-@media screen and (max-width: 650px) and (orientation: landscape){
+@media screen and (max-width: 830px) and (orientation: landscape){
     .nav a{
         display: block;
         float: left;
