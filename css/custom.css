@@ -26,14 +26,19 @@ a.skip-main:focus, a.skip-main:active {
 
 .nav{
     overflow:hidden;
-    background-color: lightgray
+    background-color: lightgray;
+    width:100%;
 }
 
 .nav a{
     
+    
     color: black;
     font-family: 'Staatliches', cursive;
     padding: 14px 16px;
+    display: inline-block;
+    text-align: center;
+    position:relative;
     
 }
 a.active{
