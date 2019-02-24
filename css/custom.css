@@ -41,13 +41,7 @@ a.active{
    background: #000000;
 }
 @media screen and (max-width: 600px){
-    .nav a{
-        float:none;
-        width: 100%;
-        display: block;
-        text-align: center;
-        font-size: 2em;
-    }
+
 }
 @media screen and (min-width: 600px) {
     .nav a{
