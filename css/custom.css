@@ -45,7 +45,7 @@ a.active{
 }
 @media screen and (min-width: 600px) {
     .nav a{
-        padding: 20px;
+        float:left;
         color: black;
         font-family: 'Staatliches', cursive;
         font-size: 4.5em;
