@@ -32,6 +32,11 @@ a.skip-main:focus, a.skip-main:active {
 .nav a{
     float:none;
     width: 100%;
+    color: black;
+    font-family: 'Staatliches', cursive;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
 }
 a.active{
    color: white;
@@ -47,8 +52,8 @@ a.active{
     }
 }
 
-@media screen and (min-width: 600px) and (orientation: landscape){
-    
+@media screen and (max-width: 600px) and (orientation: landscape){
+
 }
 
 @media screen and (min-width: 768px){
