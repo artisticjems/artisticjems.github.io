@@ -34,14 +34,14 @@ a.skip-main:focus, a.skip-main:active {
     
     color: black;
     font-family: 'Staatliches', cursive;
-    padding: 14px 16px;
+    padding: 8px 16px;
     
 }
 a.active{
    color: white;
    background: #000000;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 560px){
     .nav a{
         float:none;
         width: 100%;
@@ -52,25 +52,25 @@ a.active{
     
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 568px){
     .nav a{
         display: block;
         float: left;
         color: black;
         font-family: 'Staatliches', cursive;
-        font-size: 2em;
+        font-size: 1.7em;
         text-decoration: none;
     }
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 730px) {
     .nav a{
         display: block;
         float: left;
         color: black;
         font-family: 'Staatliches', cursive;
-        font-size: 4.5em;
+        font-size: 2.3em;
         text-decoration: none;
     }
 }
@@ -78,8 +78,14 @@ a.active{
 @media only screen and (min-width: 992px) {
     .nav a{
         display: block;
+        float: left;
+        color: black;
+        font-family: 'Staatliches', cursive;
+        font-size: 3.4em;
+        text-decoration: none;
     }
 }
+
 
 .page-header{
     font-size: 2.5em;
@@ -116,7 +122,11 @@ a.active{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
-    align-content: space-between
+    align-content: space-between;
+}
+.artist-profiles-img{
+    max-width: 50%;
+    height: auto;
 }
 .top-pick-header{
     font-size:20pt
