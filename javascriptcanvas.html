@@ -13,14 +13,20 @@
                  height: 80%; */
                  border: 1px solid black;
                  display: block;
+             }
+             #mycolor{
+                 display: block
              }           
         </style>
     </head>
     <body>
+        <input type = "color" id="myColor">
         <canvas id= canvas ></canvas>
         <script>
-                var strokestyleState
-                var linewidthState
+                var strokestyleState = '#ff0000'
+                // var colorpicked = document.getElementById("myColor").value
+                document.getElementById("myColor").value = strokestyleState
+                var linewidthState = 5;
                 var canvas = document.getElementById('canvas');
                 
                 document.body.style.margin = 0;
@@ -39,38 +45,49 @@
 
                 // new position from mouse event
                 function setPosition(e) {
-                pos.x = e.clientX;
-                pos.y = e.clientY;
+                pos.x = (e.clientX);
+                pos.y = (e.clientY);
                 }
 
                 // resize canvas
                 function resize() {
-                ctx.canvas.width = window.innerWidth;
-                ctx.canvas.height = window.innerHeight;
+                ctx.canvas.width = (window.innerWidth)*.8;
+                ctx.canvas.height = (window.innerHeight)*.8;
                 }
 
                 function keypresschecker(e){
                     keyEntered = e.charCode;
-                    //blue
-                    if(keyEntered == 98){ strokestyleState  = '#0000ff'
+                    //blue -- key B
+                    if(keyEntered == 98){ strokestyleState  = '#0000ff',
+                        document.getElementById("myColor").value = strokestyleState;
                     }
-                    //green
-                    else if(e.charCode == 103) strokestyleState  = '#008000';
-                    //yellow
-                    else if(e.charCode == 121) strokestyleState  = '#ffff00';
-                    //red
-                    else if(e.charCode == 114) strokestyleState  = '#ff0000';
-                    //increase line width(up arrow key)
+                    //green -- key G
+                    else if(e.charCode == 103){ strokestyleState  = '#008000',
+                        document.getElementById("myColor").value = strokestyleState;
+                    }
+                    //yellow -- key Y
+                    else if(e.charCode == 121){ strokestyleState  = '#ffff00',
+                        document.getElementById("myColor").value = strokestyleState;
+                    }
+                    //red -- key R
+                    else if(e.charCode == 114){ strokestyleState  = '#ff0000',
+                        document.getElementById("myColor").value = strokestyleState;
+                    }
+                    //increase line width(key Q)
                     else if(e.charCode == 113){
                     linewidthState = linewidthState + 1
                     }
-                    //decrease line (down arrow key)
+                    //decrease line (key A)
                     else if(e.charCode == 97 && linewidthState !== 1){
                         linewidthState = linewidthState - 1
                     }
-                    document.getElementById("demo").innerHTML = e.linewidthState;
+
+                    //clear canvas (spacebar)
+                    else if (e.charCode == 32){
+                        ctx.clearRect(0,0,ctx.canvas.width,ctx.canvas.height)
+                    }
+                    document.getElementById("demo").innerHTML = e.charCode;
                 }
-                // keypresschecker()
                 function draw(e) {
                 // mouse left button must be pressed
                 if (e.buttons !== 1) return;
@@ -78,7 +95,7 @@
                 ctx.beginPath(); // begin
 
                 ctx.lineCap = 'round';
-                
+                strokestyleState = document.getElementById("myColor").value
                 ctx.lineWidth = linewidthState ;
                 ctx.strokeStyle = strokestyleState;
 
