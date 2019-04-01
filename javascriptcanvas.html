@@ -41,6 +41,10 @@
                 document.addEventListener('mousemove', draw);
                 document.addEventListener('mousedown', setPosition);
                 document.addEventListener('mouseenter', setPosition);
+                document.addEventListener('touchmove', draw);
+                document.addEventListener('touchstart', setPosition);
+                document.addEventListener('touchend', setPosition);
+                
                 document.addEventListener('keypress', keypresschecker);
 
                 // new position from mouse event
