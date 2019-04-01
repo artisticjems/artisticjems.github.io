@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Canvas Assignment</title>
+        <style>
+             html,body{
+                 width: 100%;
+                 height: 100%;
+             }
+             canvas{
+                 width: 80%;
+                 height: 80%;
+                 border: 1px solid black;
+                 display: block;
+             }           
+        </style>
+    </head>
+    <body>
+        <canvas id= canvas ></canvas>
+        <script>
+                var canvas = document.getElementById('canvas');
+                
+                document.body.style.margin = 0;
+                canvas.style.position = 'fixed';                
+                
+                var ctx = canvas.getContext('2d');
+                resize();
+
+                var pos = { x: 0, y:0};
+
+                window.addEventListener('resize', resize);
+                document.addEventListener('mousemove', draw);
+                document.addEventListener('mousedown', setPosition);
+                document.addEventListener('mouseenter', setPosition);
+                document.addEventListener('keypress', keypresschecker);
+
+                // new position from mouse event
+                function setPosition(e) {
+                pos.x = e.clientX;
+                pos.y = e.clientY;
+                }
+
+                // resize canvas
+                function resize() {
+                ctx.canvas.width = window.innerWidth;
+                ctx.canvas.height = window.innerHeight;
+                }
+
+                function keypresschecker(e){
+                    keyEntered = e.charCode
+                    //blue
+                    if(keyEntered == 98){
+                        strokeStyle ='#0000ff';
+                    }
+                    //green
+                    else if(e.charCode == 103) strokeStyle = '#008000';
+                    //yellow
+                    else if(e.charCode == 121) strokeStyle = '#ffff00';
+                    //red
+                    else if(e.charCode == 114) strokeStyle = '#ff0000';
+                    document.getElementById("demo").innerHTML = keyEntered;
+                }
+                keypresschecker()
+                function draw(e) {
+                // mouse left button must be pressed
+                if (e.buttons !== 1) return;
+
+                ctx.beginPath(); // begin
+
+                ctx.lineCap = 'round';
+                
+                ctx.lineWidth = 5;
+                ctx.strokeStyle = '#ff0000';
+
+
+
+                ctx.moveTo(pos.x, pos.y); // from
+                setPosition(e);
+                ctx.lineTo(pos.x, pos.y); // to
+
+                ctx.stroke(); // draw it!
+                }
+
+                // // resize the canvas to fill browser window dynamically
+                // window.addEventListener('resize', resizeCanvas, false);
+                
+                // function resizeCanvas() {
+                //         canvas.width = window.innerWidth;
+                //         canvas.height = window.innerHeight;
+
+
+                // }
+
+                // resizeCanvas();
+
+                // canvas.addEventListener('mousemove', function(event){
+                //     drawStuff(event)
+                // });
+                
+                // function drawStuff(event) {
+
+                    
+                   
+                    
+                //     var curX = event.clientX - canvas.offsetLeft;
+                //     var curY = event.clientY - canvas.offsetTop;
+                //     var prevX = curX;
+                //     var prevY = curY;
+                //     var x = "black", y = 2;
+                //     var coords = "prev X coords: " + prevX + ", prev Y coords: " + prevY +"\n curX: " + curX + "curY: " + curY;
+                //                          
+                //         // do your drawing  here
+                //     // ctx.beginpath();
+                //     ctx.moveTo = (0,0);
+                //     ctx.lineTo= (40,40);
+                //     // ctx.moveTo(prevX,prevY);
+                //     // ctx.lineTo(curX,curY);
+                //     ctx.strokeStyle = x;
+                //     ctx.lineWidth = y;
+                //     ctx.stroke()
+                // }
+               
+                // drawStuff(); 
+                
+           
+        </script>
+        <p id="demo"></p>
+    </body>
+</html>
