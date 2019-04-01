@@ -9,8 +9,8 @@
                  height: 100%;
              }
              canvas{
-                 width: 80%;
-                 height: 80%;
+                 /* width: 80%;
+                 height: 80%; */
                  border: 1px solid black;
                  display: block;
              }           
@@ -19,6 +19,8 @@
     <body>
         <canvas id= canvas ></canvas>
         <script>
+                var strokestyleState
+                var linewidthState
                 var canvas = document.getElementById('canvas');
                 
                 document.body.style.margin = 0;
@@ -48,18 +50,25 @@
                 }
 
                 function keypresschecker(e){
-                    keyEntered = e.charCode
+                    keyEntered = e.charCode;
                     //blue
-                    if(keyEntered == 98){
-                        strokeStyle ='#0000ff';
+                    if(keyEntered == 98){ strokestyleState  = '#0000ff'
                     }
                     //green
-                    else if(e.charCode == 103) strokeStyle = '#008000';
+                    else if(e.charCode == 103) strokestyleState  = '#008000';
                     //yellow
-                    else if(e.charCode == 121) strokeStyle = '#ffff00';
+                    else if(e.charCode == 121) strokestyleState  = '#ffff00';
                     //red
-                    else if(e.charCode == 114) strokeStyle = '#ff0000';
-                    document.getElementById("demo").innerHTML = strokeStyle;
+                    else if(e.charCode == 114) strokestyleState  = '#ff0000';
+                    //increase line width(up arrow key)
+                    else if(e.charCode == 113){
+                    linewidthState = linewidthState + 1
+                    }
+                    //decrease line (down arrow key)
+                    else if(e.charCode == 97 && linewidthState !== 1){
+                        linewidthState = linewidthState - 1
+                    }
+                    document.getElementById("demo").innerHTML = e.linewidthState;
                 }
                 // keypresschecker()
                 function draw(e) {
@@ -70,8 +79,8 @@
 
                 ctx.lineCap = 'round';
                 
-                ctx.lineWidth = 5;
-                ctx.strokeStyle = '#ff0000';
+                ctx.lineWidth = linewidthState ;
+                ctx.strokeStyle = strokestyleState;
 
 
 
