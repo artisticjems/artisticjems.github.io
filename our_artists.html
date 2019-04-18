@@ -34,7 +34,7 @@
             <a class = "skip-main" href="#content" >Skip To Content</a>
             
             <!-- navbar -->
-            <nav class= "nav" role="navigation">
+            <nav class= "nav" id ="navbar" role="navigation">
                 <ul>
                     <!-- NavBar:  Home  ArtPieces  OurArtist About Us FAQs -->
                     <li><a href="index.html">Home</a></li>
@@ -116,7 +116,7 @@
         <script>
             window.onscroll = function() {myFunction()};
             
-            var navbar = document.getElementsByClassName("nav");
+            var navbar = document.getElementById("navbar");
             var sticky = navbar.offsetTop;
             
             function myFunction() {
